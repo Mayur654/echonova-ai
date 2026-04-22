@@ -1,6 +1,8 @@
 # 🌱 EcoNova AI 
 ### AI-Powered Carbon Credit Platform for Regenerative Agriculture
 
+**[Live Demo 🚀](https://carbonx-ai.vercel.app/)**
+
 [![Project Status: Alpha](https://img.shields.io/badge/Project%20Status-Alpha-orange.svg)]()
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![Next.js](https://img.shields.io/badge/Frontend-Next.js%2014-black.svg)](https://nextjs.org/)
@@ -18,6 +20,29 @@
 - **🔗 On-Chain Transparency**: Immutable logging of field verifications and credit issuance via Supabase (ready for blockchain integration).
 - **🚜 Farmer-First Portal**: Simple, mobile-responsive dashboard for farmers to map their fields and track their ESG scores.
 - **🏢 Government / Inspector Portal**: Field verification tools with live GPS tracing and automated land audit reports.
+
+---
+
+## 🏗️ System Architecture
+
+EcoNova AI utilizes a modern, decoupled architecture to handle heavy satellite data processing and real-time farmer interactions.
+
+```mermaid
+graph TD
+    User((User/Farmer)) -->|HTTPS| Web[Next.js Frontend / Vercel]
+    Inspector((Inspector)) -->|HTTPS| Web
+    
+    subgraph Cloud Infrastructure
+        Web -->|REST API| API[FastAPI / Render]
+        API -->|CRUD/Auth| DB[(Supabase DB & Auth)]
+        API -->|Satellite Query| GEE[Google Earth Engine]
+        API -->|Yield Analysis| ML[ML Model Engine]
+    end
+    
+    subgraph Data Sources
+        Sats[Sentinel/MODIS Satellites] --> GEE
+    end
+```
 
 ---
 
