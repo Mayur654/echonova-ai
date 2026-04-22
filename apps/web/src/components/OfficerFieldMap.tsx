@@ -151,7 +151,7 @@ export default function OfficerFieldMap({ farmerPolygon, onSubmit, onCancel }: P
         <MapContainer
           center={center} zoom={15}
           style={{ height: "100%", width: "100%" }}
-          tap touchZoom doubleClickZoom={false}
+          touchZoom doubleClickZoom={false}
         >
           <TileLayer
             url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
