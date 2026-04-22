@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+ENV/
+env/
+.env
+
+# Secrets
+apps/api/keys/
+*.json
+!package.json
+!tsconfig.json
+
+# Next.js
+apps/web/.next/
+apps/web/node_modules/
+apps/web/.env*
+!apps/web/.env.example
+
+# IDEs
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
