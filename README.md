@@ -1,7 +1,7 @@
 # 🌱 EcoNova AI 
 ### AI-Powered Carbon Credit Platform for Regenerative Agriculture
 
-**[Live Demo 🚀](https://carbonx-ai.vercel.app/)**
+**[Live Demo 🚀](https://econova-ai.vercel.app/)**
 
 [![Project Status: Alpha](https://img.shields.io/badge/Project%20Status-Alpha-orange.svg)]()
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
